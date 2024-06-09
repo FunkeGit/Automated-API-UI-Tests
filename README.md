@@ -53,6 +53,7 @@ An HTML report is generated on every test run which filters reports by browser, 
 npx playwright show report
 ```
 
+#### **Run Test On CI GitHub Actions**
 When installing Playwright, an option to add __[GitHub Actions](https://docs.github.com/en/actions) workflow is provided. This creates a ```playwright.yml``` file in the ```.github\workflow``` folder. Tests will run on pull or push requests on the branch main/master. The following steps should be implemented to test on CI:
 
 + Use ```git init``` to __[initialize](https://github.com/git-guides/git-init), __[add](https://github.com/git-guides/git-add), __[commit](https://github.com/git-guides/git-commit), and __[push](https://github.com/git-guides/git-push) code to GitHub
