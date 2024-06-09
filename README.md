@@ -1,10 +1,10 @@
-#### **OBJECTIVE**
+## **OBJECTIVE**
 To provide instructions on how to run the API and UI automated test locally and on CI
 
-#### **Automation Framework**
+## **Automation Framework**
 - __[Playwright](https://playwright.dev/docs/intro/)__ with `js`
 
-#### **Playwright Installation**
+## **Playwright Installation**
 + Install __[node.js](https://nodejs.org/en)__
 + Install  __[VS Code Editor](https://code.visualstudio.com/)__
 + Open the work folder in VS Code Editor
@@ -20,7 +20,7 @@ npm init playwright@latest
   * Install Playwright browsers (default is true)
 
 
-#### **Files Installed With Browsers**
+### **Files Installed With Browsers**
 ```
 playwright.config.js
 package.json
@@ -33,7 +33,7 @@ The __[playwright.config.js](https://playwright.dev/docs/test-configuration)__ i
 Test cases are developed and designed in the { tests } folder
 
 
-#### **Running Tests Locally**
+## **Running Tests Locally**
 + Run all tests in the folder in headless mode meaning no browser will open while running the test. Test results and logs will be displayed on the terminal
 ```
 npx playwright test
@@ -47,13 +47,13 @@ npx playwright test Login.spec.js
 npx playwright test --project='chromium' --headed
 ```
 
-#### **HTML Test Reports**
+## **HTML Test Reports**
 An HTML report is generated on every test run which filters reports by browser, passed, failed, skipped, and flaky tests. By default, the HTML report is opened when the test fails
 ```
 npx playwright show report
 ```
 
-#### **Run Test On CI GitHub Actions**
+## **Run Test On CI GitHub Actions**
 When installing Playwright, an option to add __[GitHub Actions](https://docs.github.com/en/actions) workflow is provided. This creates a ```playwright.yml``` file in the ```.github\workflow``` folder. Tests will run on pull or push requests on the branch main/master. The following steps should be implemented to test on CI:
 
 + Use ```git init``` to __[initialize](https://github.com/git-guides/git-init), __[add](https://github.com/git-guides/git-add), __[commit](https://github.com/git-guides/git-commit), and __[push](https://github.com/git-guides/git-push) code to GitHub
